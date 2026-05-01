@@ -15,7 +15,7 @@ pipeline {
             }
         }
 
-        stage('Run Container') {
+        stage('Deploy Container') {
             steps {
                 sh '''
                 docker stop vle7-container || true
