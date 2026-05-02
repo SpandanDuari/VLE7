@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Code') {
             steps {
-                git 'https://github.com/SpandanDuari/VLE7.git'
+                git branch: 'main', url: 'https://github.com/SpandanDuari/VLE7.git'
             }
         }
 
@@ -20,7 +20,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t vle7-app .'
+                sh 'docker build --no-cache -t vle7-app .'
             }
         }
 
