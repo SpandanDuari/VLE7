@@ -5,7 +5,7 @@ const app = express();
 
 app.get('/', (req, res) => {
   res.send(`
-    <h1>CI/CD Demo</h1>
+    <h1>CI/CD Demo by spandan duari</h1>
     <p>Sec: D1</p>
     <p>Reg no:RA2311003010207</p>
     <p>Hostname: ${os.hostname()}</p>
