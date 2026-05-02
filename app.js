@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
   res.send(`
     <h1>CI/CD Demo</h1>
     <p>Sec: D1</p>
-    <p>Reg no:</p>
+    <p>Reg no:RA</p>
     <p>Hostname: ${os.hostname()}</p>
     <p>Time: ${new Date()}</p>
   `);
